@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "90b8193b-2de8-4393-a286-bf590e6b1f02",
+		"name": "Exam_prep_1_DDD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28660067",
+		"_collection_link": "https://restless-moon-674866.postman.co/workspace/QA-Manual-testing~af536441-39ca-416a-8e90-1a2f36720686/collection/28660067-90b8193b-2de8-4393-a286-bf590e6b1f02?action=share&creator=28660067&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/user/Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Dimi4\",\r\n    \"email\": \"dimo_3@abv.bg\",\r\n    \"password\": \"qwerty123\",\r\n    \"rePassword\": \"qwerty123\",\r\n    \"acceptedAgreement\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/user/Create",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"user",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/user/Authentication",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIxNDY3YmNjNC1hMzhkLTRmNmMtOGZmMy1mMGZjNTg1OTlmNjgiLCJpYXQiOiIwOC8xMS8yMDIzIDA4OjQwOjAyIiwiVXNlcklkIjoiYTU4MDNhZmUtNGU2ZC00NzhhLTYxOTQtMDhkYjkzMTMwMjM2IiwiRW1haWwiOiJkaW1vXzNAYWJ2LmJnIiwiVXNlck5hbWUiOiJEaW1pNCIsImV4cCI6MTY5MTc2NDgwMiwiaXNzIjoiSWRlYUNlbnRlcl9BcHBfU29mdFVuaSIsImF1ZCI6IklkZWFDZW50ZXJfV2ViQVBJX1NvZnRVbmkifQ.d5aRc2rMqwclEExZ_V2e3EL-xTm2p6NXium2poDSAZk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"dimo_3@abv.bg\",\r\n    \"password\": \"qwerty123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/user/Authentication",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"user",
+						"Authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIxNDY3YmNjNC1hMzhkLTRmNmMtOGZmMy1mMGZjNTg1OTlmNjgiLCJpYXQiOiIwOC8xMS8yMDIzIDA4OjQwOjAyIiwiVXNlcklkIjoiYTU4MDNhZmUtNGU2ZC00NzhhLTYxOTQtMDhkYjkzMTMwMjM2IiwiRW1haWwiOiJkaW1vXzNAYWJ2LmJnIiwiVXNlck5hbWUiOiJEaW1pNCIsImV4cCI6MTY5MTc2NDgwMiwiaXNzIjoiSWRlYUNlbnRlcl9BcHBfU29mdFVuaSIsImF1ZCI6IklkZWFDZW50ZXJfV2ViQVBJX1NvZnRVbmkifQ.d5aRc2rMqwclEExZ_V2e3EL-xTm2p6NXium2poDSAZk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"new idea studio\", \r\n    \"url\":\"https://www.pngegg.com/en/png-nmeer.png\",\r\n    \"description\": \"this is new idea with url\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/create",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"idea",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIxNDY3YmNjNC1hMzhkLTRmNmMtOGZmMy1mMGZjNTg1OTlmNjgiLCJpYXQiOiIwOC8xMS8yMDIzIDA4OjQwOjAyIiwiVXNlcklkIjoiYTU4MDNhZmUtNGU2ZC00NzhhLTYxOTQtMDhkYjkzMTMwMjM2IiwiRW1haWwiOiJkaW1vXzNAYWJ2LmJnIiwiVXNlck5hbWUiOiJEaW1pNCIsImV4cCI6MTY5MTc2NDgwMiwiaXNzIjoiSWRlYUNlbnRlcl9BcHBfU29mdFVuaSIsImF1ZCI6IklkZWFDZW50ZXJfV2ViQVBJX1NvZnRVbmkifQ.d5aRc2rMqwclEExZ_V2e3EL-xTm2p6NXium2poDSAZk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"new idea without url\", \r\n    \"description\": \"this is new idea without url\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/create",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"idea",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIxNDY3YmNjNC1hMzhkLTRmNmMtOGZmMy1mMGZjNTg1OTlmNjgiLCJpYXQiOiIwOC8xMS8yMDIzIDA4OjQwOjAyIiwiVXNlcklkIjoiYTU4MDNhZmUtNGU2ZC00NzhhLTYxOTQtMDhkYjkzMTMwMjM2IiwiRW1haWwiOiJkaW1vXzNAYWJ2LmJnIiwiVXNlck5hbWUiOiJEaW1pNCIsImV4cCI6MTY5MTc2NDgwMiwiaXNzIjoiSWRlYUNlbnRlcl9BcHBfU29mdFVuaSIsImF1ZCI6IklkZWFDZW50ZXJfV2ViQVBJX1NvZnRVbmkifQ.d5aRc2rMqwclEExZ_V2e3EL-xTm2p6NXium2poDSAZk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/all",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"idea",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/Edit?ideaid=7b290a94-5cdd-48bc-f531-08db92c27c0d",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIxNDY3YmNjNC1hMzhkLTRmNmMtOGZmMy1mMGZjNTg1OTlmNjgiLCJpYXQiOiIwOC8xMS8yMDIzIDA4OjQwOjAyIiwiVXNlcklkIjoiYTU4MDNhZmUtNGU2ZC00NzhhLTYxOTQtMDhkYjkzMTMwMjM2IiwiRW1haWwiOiJkaW1vXzNAYWJ2LmJnIiwiVXNlck5hbWUiOiJEaW1pNCIsImV4cCI6MTY5MTc2NDgwMiwiaXNzIjoiSWRlYUNlbnRlcl9BcHBfU29mdFVuaSIsImF1ZCI6IklkZWFDZW50ZXJfV2ViQVBJX1NvZnRVbmkifQ.d5aRc2rMqwclEExZ_V2e3EL-xTm2p6NXium2poDSAZk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"New edited idea\",\r\n    \"url\": \"https://www.pngegg.com/en/png-bqisa.png\",\r\n    \"description\":\"This is edited idea\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/Edit?ideaid=7b290a94-5cdd-48bc-f531-08db92c27c0d",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"idea",
+						"Edit"
+					],
+					"query": [
+						{
+							"key": "ideaid",
+							"value": "7b290a94-5cdd-48bc-f531-08db92c27c0d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/Delete?ideaid=7b290a94-5cdd-48bc-f531-08db92c27c0d",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIxNDY3YmNjNC1hMzhkLTRmNmMtOGZmMy1mMGZjNTg1OTlmNjgiLCJpYXQiOiIwOC8xMS8yMDIzIDA4OjQwOjAyIiwiVXNlcklkIjoiYTU4MDNhZmUtNGU2ZC00NzhhLTYxOTQtMDhkYjkzMTMwMjM2IiwiRW1haWwiOiJkaW1vXzNAYWJ2LmJnIiwiVXNlck5hbWUiOiJEaW1pNCIsImV4cCI6MTY5MTc2NDgwMiwiaXNzIjoiSWRlYUNlbnRlcl9BcHBfU29mdFVuaSIsImF1ZCI6IklkZWFDZW50ZXJfV2ViQVBJX1NvZnRVbmkifQ.d5aRc2rMqwclEExZ_V2e3EL-xTm2p6NXium2poDSAZk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/idea/Delete?ideaid=7b290a94-5cdd-48bc-f531-08db92c27c0d",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"idea",
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "ideaid",
+							"value": "7b290a94-5cdd-48bc-f531-08db92c27c0d"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
