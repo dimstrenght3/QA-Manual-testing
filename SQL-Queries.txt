@@ -1,0 +1,31 @@
+
+
+create tasks:
+
+insert into tasks (Title, Description, BoardID, CreatedOn, OwnerID)
+values ("DimoTestTask_2", "Task for testing", 1, Now(), '751dbf39-a594-44eb-8fc6-861524fbd7c6'),
+("DimoTestTask_3", "Task for testing", 1, Now(), '751dbf39-a594-44eb-8fc6-861524fbd7c6'),
+("DimoTestTask_4", "Task for testing", 2, Now(), '751dbf39-a594-44eb-8fc6-861524fbd7c6'),
+("DimoTestTask_5", "Task for testing", 2, Now(), '751dbf39-a594-44eb-8fc6-861524fbd7c6'),
+("DimoTestTask_6", "Task for testing", 3, Now(), '751dbf39-a594-44eb-8fc6-861524fbd7c6'),
+("DimoTestTask_7", "Task for testing", 3, Now(), '751dbf39-a594-44eb-8fc6-861524fbd7c6'),
+("DimoTestTask_8", "Task for testing", 1, Now(), '751dbf39-a594-44eb-8fc6-861524fbd7c6'),
+("DimoTestTask_9", "Task for testing", 1, Now(), '751dbf39-a594-44eb-8fc6-861524fbd7c6');
+
+search task by Title:
+
+select * from tasks 
+where Title = "TaskForSearch"
+
+edit task:
+
+UPDATE tasks
+SET Title = "EditedTaskForSearch",
+    Description = "This task was edited by Dimo"
+WHERE Id = 5;
+
+
+SEARCH by OwnerID:
+
+Select * from tasks
+where ownerID = '751dbf39-a594-44eb-8fc6-861524fbd7c6'
